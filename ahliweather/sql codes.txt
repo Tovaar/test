@@ -1,0 +1,13 @@
+CREATE DATABASE `ahliweatherdb` CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+
+CREATE TABLE `users` (
+	`idUsers` INT(11) NOT NULL AUTO_INCREMENT UNIQUE,
+	`usernameUsers` VARCHAR(30) NOT NULL,
+	`emailUsers` VARCHAR(100) NOT NULL,
+	`firstNameUsers` VARCHAR(30) NOT NULL,
+	`lastNameUsers` VARCHAR(50) NOT NULL,
+	`passwordUsers` VARCHAR(200) NOT NULL,
+	`rankUsers` INT(2) NOT NULL DEFAULT 1,
+	PRIMARY KEY (`idUsers`)
+);
